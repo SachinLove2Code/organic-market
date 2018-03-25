@@ -7,11 +7,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>organicmarket Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+
+
 	<dependencies>
 
-<!-- 	<properties>
-	<javaee.version></javaee.version>
-	</properties> -->
+		<!-- <properties> <javaee.version></javaee.version> </properties> -->
 
 		<!-- JAVA EE -->
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
@@ -27,6 +27,14 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Linking backend project -->
+		<dependency>
+			<groupId>com.org</groupId>
+			<artifactId>organicmarketstorage</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 
 		<!-- JSTL -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->

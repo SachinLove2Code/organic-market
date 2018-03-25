@@ -24,8 +24,8 @@
 	window.menu = '${title}';
 </script>
 
-<%-- <!-- Bootstrap core CSS -->
-<link href="${vendor}/bootstrap/css/bootstrap.min.css" rel="stylesheet"> --%>
+<!-- Bootstrap core CSS -->
+<link href="${vendor}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap Readable Theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
@@ -55,6 +55,11 @@
 			<!-- Laod only when user click about -->
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
+			</c:if>
+
+			<!-- Laod only when user click Product -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listproduct.jsp"%>
 			</c:if>
 		</div>
 
