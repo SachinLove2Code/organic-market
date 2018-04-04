@@ -23,5 +23,6 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Sachin/Desktop/mysql-connector-java-5.1.43-bin.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

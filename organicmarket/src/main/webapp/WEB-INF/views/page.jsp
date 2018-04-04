@@ -1,10 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="vendor" value="/resources/vendor" />
+
 <spring:url var="images" value="/resources/images" />
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
@@ -20,18 +21,27 @@
 <meta name="author" content="">
 
 <title>Organic Market - ${title}</title>
+
 <script>
 	window.menu = '${title}';
+	window.contextRoot = '${contextRoot}';
 </script>
 
 <!-- Bootstrap core CSS -->
+
 <link href="${vendor}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
 
 <!-- Bootstrap Readable Theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/shop-homepage.css" rel="stylesheet">
+
+<%-- <link href="${vendor}/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet"> --%>
+<link href="${css}/dataTables.bootstrap4.css"
+	rel="stylesheet">
 
 </head>
 
@@ -58,7 +68,8 @@
 			</c:if>
 
 			<!-- Laod only when user click Product -->
-			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+			<c:if
+				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listproduct.jsp"%>
 			</c:if>
 		</div>
@@ -67,12 +78,19 @@
 		<%@include file="./shared/footer.jsp"%>
 
 		<!-- Bootstrap core JavaScript -->
+
 		<script src="${vendor}/jquery/jquery.min.js"></script>
 		<script src="${vendor}/bootstrap/js/bootstrap.bundle.min.js"></script>
+		
+		<script src="${vendor}/jquery/jquery.dataTables.js"></script>
+		<script src="${vendor}/jquery/dataTables.bootstrap4.js"></script>
 
 		<!-- Self creating java script -->
 		<script src="${vendor}/jquery/myapp.js"></script>
+
+
 	</div>
+
 </body>
 
 </html>
