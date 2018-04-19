@@ -36,12 +36,13 @@
 <!-- Bootstrap Readable Theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
+
 <!-- Custom styles for this template -->
 <link href="${css}/shop-homepage.css" rel="stylesheet">
 
 <%-- <link href="${vendor}/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet"> --%>
-<link href="${css}/dataTables.bootstrap4.css"
-	rel="stylesheet">
+<link href="${css}/dataTables.bootstrap4.css" rel="stylesheet">
+<link href="${css}/glyphicon.css" rel="stylesheet">
 
 </head>
 
@@ -72,6 +73,11 @@
 				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listproduct.jsp"%>
 			</c:if>
+
+			<c:if
+				test="${userClickShowproduct == true }">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
 		</div>
 
 		<!-- Footer -->
@@ -81,7 +87,7 @@
 
 		<script src="${vendor}/jquery/jquery.min.js"></script>
 		<script src="${vendor}/bootstrap/js/bootstrap.bundle.min.js"></script>
-		
+
 		<script src="${vendor}/jquery/jquery.dataTables.js"></script>
 		<script src="${vendor}/jquery/dataTables.bootstrap4.js"></script>
 

@@ -26,8 +26,8 @@
 							window.categoryID = '';
 						</script>
 						<ol class="breadcrumb">
-							<li><a href="${contextRoot}/home">Home</a></li>
-							<li>/</li>
+							<li><a href="${contextRoot}/home">Home</a></li>&#160;
+							<li>/</li>&#160;
 							<li class="active">All Products</li>
 						</ol>
 					</c:if>
@@ -38,10 +38,10 @@
 							window.categoryID = '${category.id}';
 						</script>
 						<ol class="breadcrumb">
-							<li><a href="${contextRoot}/home">Home</a></li>
-							<li>/</li>
-							<li class="active">Category</li>
-							<li>/</li>
+							<li><a href="${contextRoot}/home">Home</a></li>&#160;
+							<li>/</li>&#160;
+							<li class="active">Category</li>&#160;
+							<li>/</li>&#160;
 							<li class="active">${category.name}</li>
 						</ol>
 					</c:if>
@@ -57,6 +57,7 @@
 
 						<thead>
 							<tr>
+								<th></th>
 								<th>Name</th>
 								<th>Brand</th>
 								<th>Price</th>
@@ -67,6 +68,7 @@
 						</thead>
 						<tfoot>
 							<tr>
+								<th></th>
 								<th>Name</th>
 								<th>Brand</th>
 								<th>Price</th>
