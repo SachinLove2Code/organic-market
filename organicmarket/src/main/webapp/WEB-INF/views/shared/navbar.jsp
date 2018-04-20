@@ -1,7 +1,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container">
-		<a class="navbar-brand" href="${contextRoot}/home">Organic Market <span class="glyphicon glyphicon-home"></span></a>
+		<a class="navbar-brand" href="${contextRoot}/home">Organic Market
+			<span class="glyphicon glyphicon-home"></span>
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarResponsive" aria-controls="navbarResponsive"
 			aria-expanded="false" aria-label="Toggle navigation">
@@ -17,12 +19,16 @@
 
 				<li class="nav-item" id="listproduct"><a class="nav-link"
 					href="${contextRoot}/show/all/products">Products</a></li>
-					
+
 				<li class="nav-item" id="about"><a class="nav-link"
 					href="${contextRoot}/about">About</a></li>
-					
+
 				<li class="nav-item" id="contact"><a class="nav-link"
 					href="${contextRoot}/contact">Contact</a></li>
+					
+					
+				<li class="nav-item" id="manageProducts"><a class="nav-link"
+					href="${contextRoot}/manage/products">Manage Products</a></li>
 			</ul>
 		</div>
 	</div>
