@@ -52,36 +52,38 @@
 			<div class="row">
 				<div class="col-xl-12">
 
-					<table id="productListTable"
-						class="table table-striped table-borderd">
+					<div style="overflow: auto;">
 
-						<thead>
-							<tr>
-								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Qty. Available</th>
-								<th></th>
-							</tr>
+						<table id="productListTable"
+							class="table table-striped table-borderd">
 
-						</thead>
-						<tfoot>
-							<tr>
-								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Qty. Available</th>
-								<th></th>
-							</tr>
+							<thead>
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Brand</th>
+									<th>Price</th>
+									<th>Qty. Available</th>
+									<th></th>
+								</tr>
 
-						</tfoot>
-						<tbody>
-						</tbody>
-					</table>
+							</thead>
+							<tfoot>
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Brand</th>
+									<th>Price</th>
+									<th>Qty. Available</th>
+									<th></th>
+								</tr>
 
+							</tfoot>
+							<tbody>
+							</tbody>
+						</table>
 
+					</div>
 				</div>
 
 

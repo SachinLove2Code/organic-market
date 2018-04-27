@@ -73,18 +73,16 @@
 				test="${userClickAllProducts == true or userClickCategoryProducts == true}">
 				<%@include file="listproduct.jsp"%>
 			</c:if>
-			
+
 			<!-- Laod only when user click Manage Product -->
-			<c:if
-				test="${userClickManageProducts == true }">
+			<c:if test="${userClickManageProducts == true }">
 				<%@include file="manageProducts.jsp"%>
 			</c:if>
 
-			<c:if
-				test="${userClickShowproduct == true }">
+			<c:if test="${userClickShowproduct == true }">
 				<%@include file="singleProduct.jsp"%>
 			</c:if>
-			
+
 		</div>
 
 		<!-- Footer -->
@@ -92,11 +90,20 @@
 
 		<!-- Bootstrap core JavaScript -->
 
+
+		<!-- Jquery -->
 		<script src="${vendor}/jquery/jquery.min.js"></script>
+		
+		<script src="${vendor}/jquery/jquery.validate.js"></script>
+		
 		<script src="${vendor}/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+		<!-- Data Table plugin -->
 		<script src="${vendor}/jquery/jquery.dataTables.js"></script>
 		<script src="${vendor}/jquery/dataTables.bootstrap4.js"></script>
+
+		<!-- BootBox -->
+		<script src="${vendor}/jquery/bootbox.min.js"></script>
 
 		<!-- Self creating java script -->
 		<script src="${vendor}/jquery/myapp.js"></script>

@@ -45,7 +45,7 @@ public class Product implements Serializable {
 	private int quantity;
 
 	@Column(name = "is_active")
-	@JsonIgnore
+	//@JsonIgnore
 	private boolean active;
 
 	@Column(name = "category_id")

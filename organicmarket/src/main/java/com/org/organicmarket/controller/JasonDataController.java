@@ -17,16 +17,22 @@ public class JasonDataController {
 
 	@Autowired
 	private ProductDao productDao;
-	
+
 	@RequestMapping("/all/products")
 	@ResponseBody
-	public List<Product> getAllProducts(){
+	public List<Product> getAllProducts() {
 		return productDao.listActiveProducts();
 	}
-	
+
+	@RequestMapping("/admin/all/products")
+	@ResponseBody
+	public List<Product> getAllProductsForAdmin() {
+		return productDao.list();
+	}
+
 	@RequestMapping("/category/{id}/products")
 	@ResponseBody
-	public List<Product> getProductsByCategory(@PathVariable int id){
+	public List<Product> getProductsByCategory(@PathVariable int id) {
 		return productDao.listActiveProductByCategory(id);
 	}
 }
