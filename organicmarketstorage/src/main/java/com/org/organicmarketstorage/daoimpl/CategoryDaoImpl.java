@@ -21,7 +21,7 @@ public class CategoryDaoImpl implements CategoryDao {
 
 	private static List<Category> categories = new ArrayList<>();
 
-	static {
+/*	static {
 		Category category = new Category();
 		category.setId(1);
 		category.setName("Product 1");
@@ -42,7 +42,7 @@ public class CategoryDaoImpl implements CategoryDao {
 		category.setDiscription("Discription for Product 3");
 		category.setImageURL("CAT_1.PNG");
 		categories.add(category);
-	}
+	}*/
 
 	@Override
 	public List<Category> list() {

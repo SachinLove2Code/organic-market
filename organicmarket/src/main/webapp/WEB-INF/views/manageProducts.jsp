@@ -204,8 +204,7 @@
 	</div>
 
 
-	<div class="modal" id="myCategoryModal" role="dialog"
-		tabindex="-1">
+	<div class="modal" id="myCategoryModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog" role="document">
 			<div class="model-content">
 
@@ -240,9 +239,10 @@
 							</div>
 						</div>
 						<div class="form-group">
-						
+
 							<div class="col-md-8">
-								<input type="submit" value="Add Category" class="btn btn-primary"/>
+								<input type="submit" value="Add Category"
+									class="btn btn-primary" />
 							</div>
 						</div>
 

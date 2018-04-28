@@ -54,6 +54,7 @@
 		<!-- Page Content -->
 		<!--Loding home page  -->
 		<div class="content">
+		
 			<c:if test="${userClickHome == true}">
 				<%@include file="home.jsp"%>
 			</c:if>
